@@ -29,7 +29,7 @@
 // ];
 
 
-fetch('./json/perfumes.json')
+fetch('./assets/json/perfumes.json')
     .then(response => response.json())
     .then(perfumes => {
         const catalogo = document.getElementById("catalogo");
@@ -73,6 +73,10 @@ fetch('./json/perfumes.json')
                     document.getElementById("imagen-perfume").src = "./assets/img/perfumes/"+perfume.imagen+".png";
                     document.getElementById("casa-perfume").innerText = perfume.casa;
                     document.getElementById("precio-perfume").innerText = perfume.precio;
+                    document.getElementById("disponibilidad-perfume").innerText = perfume.disponibilidad;
+                    document.getElementById("descripcion-perfume").innerText = perfume.descripcion;
+                    document.getElementById("aromas-perfume").innerText = perfume.aromas;
+                    document.getElementById("id-perfume").innerText = "Ref. "+perfume.id;
                 } else {
                     console.log("Perfume no encontrado");
                 }
