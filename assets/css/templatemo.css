@@ -148,7 +148,7 @@ body, ul, li, p, a, label, input, div {
   font-size: .5em !important;
   color: #000 !important;
 }
-.big-title { background-color: #320B3C; width: 100%; color:#F1E7F2; }
+.big-title { width: 100%; color:#F1E7F2; }
 /* Services */
 .services-icon-wap {transition: .3s;}
 .services-icon-wap:hover, .services-icon-wap:hover i {color: #fff;}
